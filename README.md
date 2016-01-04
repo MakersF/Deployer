@@ -40,5 +40,5 @@ Then type in the shell `start deployer`
 
 ###Web hooks
 
-Go to your Hosting Service website and set a git hook to `$ADDRESS:$PORT/on-push` when a push is issued to your repository.
-`PUSH_COMMAND` will be executed every time the Hosting Service send a notification of the 
+Go to your Hosting Service website and set a git hook to `$ADDRESS:$PORT/on-push`.
+`PUSH_COMMAND` will be executed every time a push is issued to your repository
