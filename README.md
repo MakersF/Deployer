@@ -26,12 +26,12 @@ respawn
 setuid user
 setgid www-data
 
-export ADDRESS = "0.0.0.0"
-export PORT = 8000
-export PUSH_COMMAND = "argument to be passed to /bin/bash. Either a script location or -c 'your bash command'"
+env ADDRESS = "0.0.0.0"
+env PORT = 8000
+env PUSH_COMMAND = "argument to be passed to /bin/bash. Either a script location or -c 'your bash command'"
 script
-    cd /path/to/deployert
-    source myprojectenv/bin/activate
+    cd /path/to/deployer
+    . myprojectenv/bin/activate
     gunicorn -w 1 --bind $ADDRESS:$PORT wsgi:app
 end script
 ```
