@@ -26,9 +26,9 @@ respawn
 setuid user
 setgid www-data
 
-set ADDRESS = "0.0.0.0"
-set PORT = 8000
-set PUSH_COMMAND = "argument to be passed to /bin/bash. Either a script location or -c 'your bash command'"
+export ADDRESS = "0.0.0.0"
+export PORT = 8000
+export PUSH_COMMAND = "argument to be passed to /bin/bash. Either a script location or -c 'your bash command'"
 script
     cd /path/to/deployert
     source myprojectenv/bin/activate
